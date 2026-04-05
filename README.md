@@ -162,7 +162,7 @@ higher-lower-web-game/
 ├── README.md
 │
 ├── docs/
-│   └── COURSE_NOTES.md      # Original Day 55 course exercise description
+│   └── COURSE_NOTES.md      # All Day 55 topics with annotated code examples
 │
 ├── original/
 │   └── main.py              # Verbatim course file — single-file Flask app
