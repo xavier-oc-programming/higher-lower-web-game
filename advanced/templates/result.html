@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Higher / Lower — Result</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #1a1a2e;
+      color: #eee;
+      padding: 60px 20px;
+    }
+    h1 { font-size: 2.4rem; margin-bottom: 12px; }
+    p  { font-size: 1.1rem; color: #aaa; }
+    a  {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 24px;
+      background: #444;
+      color: #eee;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    a:hover { background: #666; }
+    img { margin-top: 28px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  {% if outcome == "low" %}
+    <h1 style="color: #e05c5c;">Too low, try again!</h1>
+    <p>Your guess: {{ guess }} — go higher.</p>
+
+  {% elif outcome == "high" %}
+    <h1 style="color: #a86cc1;">Too high, try again!</h1>
+    <p>Your guess: {{ guess }} — go lower.</p>
+
+  {% else %}
+    <h1 style="color: #4caf50;">You found me!</h1>
+    <p>{{ guess }} was the number. Well done.</p>
+
+  {% endif %}
+
+  <img src="{{ gif }}" width="300" alt="Result GIF">
+  <br>
+  <a href="/">Play again</a>
+</body>
+</html>

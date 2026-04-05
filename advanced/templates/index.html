@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Higher / Lower</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #1a1a2e;
+      color: #eee;
+      padding: 60px 20px;
+    }
+    h1 { font-size: 2.2rem; margin-bottom: 12px; }
+    p  { font-size: 1.1rem; color: #aaa; }
+    code {
+      background: #333;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    img { margin-top: 30px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Guess a number between {{ low }} and {{ high }}</h1>
+  <p>Type a number after the slash in the URL bar.</p>
+  <p>Example: <code>http://localhost:5000/3</code></p>
+  <img src="{{ gif }}" width="300" alt="Think hard GIF">
+</body>
+</html>

@@ -1,0 +1,5 @@
+# External dependencies
+flask
+
+# Python 3.10+ required for X | Y union type hints and tuple[...] syntax
+# No other pip installs needed — all other modules are standard library
