@@ -67,13 +67,13 @@ def show_subpath(subpath):
 
 **Available converters:**
 
-| Converter | Matches |
-| :--- | :--- |
-| `string` | Default — any text without a slash |
-| `int` | Positive integers |
-| `float` | Positive floating-point numbers |
-| `path` | Like `string` but also accepts slashes |
-| `uuid` | UUID strings |
+| Converter | Matches                                |
+| :-------- | :------------------------------------- |
+| `string`  | Default — any text without a slash     |
+| `int`     | Positive integers                      |
+| `float`   | Positive floating-point numbers        |
+| `path`    | Like `string` but also accepts slashes |
+| `uuid`    | UUID strings                           |
 
 **Multiple variables in one route:**
 
@@ -289,6 +289,7 @@ a_function(1, 2, 3)
 Build a Flask app where the player guesses a secret number by typing it into the URL bar.
 
 **Requirements:**
+
 - Pick a random secret (0–9) once at server start
 - Home page (`/`) — instructions + GIF
 - Route `/<int:guess>` — compare guess, return colour-coded result + GIF
@@ -324,7 +325,7 @@ if __name__ == "__main__":
     app.run(debug=True)
 ```
 
-**Key insight:** The URL path variable `<int:guess>` is the entire input mechanism — no HTML form, no JavaScript, no button. The URL *is* the interface.
+**Key insight:** The URL path variable `<int:guess>` is the entire input mechanism — no HTML form, no JavaScript, no button. The URL _is_ the interface.
 
 ---
 
